@@ -1,0 +1,21 @@
+#Calculadora
+nota_1= 0
+nota_2= 0
+resultado= 0
+operacao= ''
+
+nota_1 = int (input("Digite um valor: "))
+operacao = (input("digite a operação: "))
+nota_2 = int (input("Digite um segundo valor: "))
+
+if operacao == '+': 
+  resultado = nota_1 + nota_2
+elif operacao == '-':
+  resultado = nota_1 - nota_2
+elif operacao == '*':
+  resultado = nota_1 * nota_2
+elif operacao == '/':
+  resultado = nota_1 / nota_2
+else:
+    resultado = 'Essa opção não existe'
+print(str(nota_1) + '' + str(operacao) + '' + str(nota_2) + '= ' + str(resultado))
